@@ -1,4 +1,4 @@
-# Cybersec & Programming Blog
+# Cyber Security & Programming Blog
 
 Both programming and cyber security are fantastic areas of technology, with much being added by the communities everyday. This blog is a space in which I hope to contribute back to the communities.
 
