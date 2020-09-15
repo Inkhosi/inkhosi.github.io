@@ -1,6 +1,6 @@
 # Linux Shared Object Hijacking
 
-As the title suggests this post covers ways to go about shared object hijacking on Linux. Although DLL hijacking is a widely covered topic, I thought I would make start here as not everyone is familar with it on Linux.
+As the title suggests this post covers ways to go about shared object hijacking on Linux. Although DLL hijacking is a widely covered topic, I thought I would make a start here as not everyone is familar with it on Linux.
 
 So what am I talking about? Well, Linux has it's own version of DLLs called Shared Objects which are part of the ELF( Executable and Linkable Format) binaries that run natively on Linux. They are libraries that contain code that is designed to be shared and used in other binaries. There are two ways that shared objects can be used. The first is loaded whilst the binary is being loaded. The second is dynamically loaded during runtime. We will explore what we can do here. Before we get to that, I want to explain why you would want to do this. The main reason I see for this is persistance on the Linux machine once you have attained access. It simply gives you a way to have your code execute (at the same permission level) when the vulnerable application is run.
 
