@@ -36,7 +36,8 @@ To be able to carry out the shared object hijacking we first need to find an app
 `strace -e trace=openat -o ~/trace.log totem`
 
 Example Output:
-```openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+```
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libtotem.so.0", O_RDONLY|O_CLOEXEC) = 3
 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0", O_RDONLY|O_CLOEXEC) = 3
 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libglib-2.0.so.0", O_RDONLY|O_CLOEXEC) = 3
